@@ -11,12 +11,12 @@ const Place = ({data, handleDelete}) => {
         <img src={image} />
         <h2>{name}</h2>
         <div style={{display: isFull ? 'block' : 'none'}}>
-            <p>{info}</p>
+            <p id="tour-item-para-rec6d6T3q5EBIdCfD">{info}</p>
             <p>Price: {price}</p>
         </div>
         <div className="buttons">
             <button onClick={() => setIsFull((preState) => !preState)}>{isFull ? 'See less' : 'Show more'}</button>
-            <button onClick={() => handleDelete(id)}>Delete</button>
+            <button id="delete-btn-rec6d6T3q5EBIdCfD" onClick={() => handleDelete(id)}>Delete</button>
         </div>
     </div>
 }
