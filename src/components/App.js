@@ -5,9 +5,9 @@ import Place from "../compo/place";
 
 const App = () => {
   const [data, setData] = useState(tourData);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {setTimeout(() => setIsLoading(false), 2000)}, []);
+  // useEffect(() => {setTimeout(() => setIsLoading(false), 2000)}, []);
 
   const handleDelete = (id) => {
     const updatedData = data.filter((place) => place.id !== id);

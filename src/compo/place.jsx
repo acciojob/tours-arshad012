@@ -5,13 +5,22 @@ const Place = ({data, handleDelete}) => {
 
     const {id, name, info, image, price} = data;
 
-    
-    
+    let information = '';
+    if(!isFull) {
+        for(let i=0; i<250; i++) {
+            information += info[i];
+        }
+    } else {
+        information = info;
+    }
+
+    // style={{display: isFull ? 'block' : 'none'}}
+
     return <div className="tour-item">
         <img src={image} />
         <h2>{name}</h2>
-        <div style={{display: isFull ? 'block' : 'none'}}>
-            <p id="tour-item-para-rec6d6T3q5EBIdCfD">{info}</p>
+        <div>
+            <p id="tour-item-para-rec6d6T3q5EBIdCfD">{information}</p>
             <p>Price: {price}</p>
         </div>
         <div className="buttons">
