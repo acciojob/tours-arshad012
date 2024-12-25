@@ -22,7 +22,7 @@ const Place = ({data, handleDelete}) => {
             <p>Price: {price}</p>
         </div>
         <div className="buttons">
-            <button id="see-more-rec6d6T3q5EBIdCfD" onClick={() => setIsFull((preState) => !preState)}>{isFull ? 'See less' : 'Show more'}</button>
+            <button id="see-more-rec6d6T3q5EBIdCfD" onClick={() => setIsFull((preState) => !preState)}>{isFull ? 'Show less' : 'Show more'}</button>
             <button id="delete-btn-rec6d6T3q5EBIdCfD" onClick={() => handleDelete(id)}>Delete</button>
         </div>
     </div>
